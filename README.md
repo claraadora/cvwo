@@ -1,2 +1,4 @@
 # cvwo
-Project folder for Computing for Voluntary Welfare Organisations (CVWO)
+Full Name            : Clara Adora 
+Matriculation Number : A0200670W
+
