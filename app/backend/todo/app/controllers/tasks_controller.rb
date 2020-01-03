@@ -8,18 +8,24 @@ class TasksController < ApplicationController
   end
 
   def new 
+    @task = Task.new
   end
   
   def create
     @task = Task.new(task_params)
- 
-    @task.save
-    redirect_to @task
+    
+    if @task.save
+      redirect_to @task
+    else 
+      render 'new'
+    end
   end
  
   private
     def task_params
       params.require(:task).permit(:title, :deadline)
     end
-end
+end 
+
+
  
